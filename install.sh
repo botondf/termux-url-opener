@@ -12,11 +12,10 @@ elif [ ! -e install.sh ]; then
     exit 1
 fi
 
-cd $HOME
 chmod u+x $HOME/termux-url-opener/termux-url-opener.sh
-mkdir bin
+mkdir $HOME/bin
 ln -s $HOME/termux-url-opener/termux-url-opener.sh $HOME/bin/termux-url-opener.sh
-ln -s $HOME/termux-url-opener/termux-url-opener.sh $HOME/bin/termux-file-editor.sh
+#ln -s $HOME/termux-url-opener/termux-url-opener.sh $HOME/bin/termux-file-editor.sh
 termux-setup-storage
 
-echo "Sucessfully installed to $HOME/bin/termux-url-opener.sh. Files are downloaded to $dir.
+echo "Sucessfully installed to $HOME/bin/termux-url-opener.sh."
