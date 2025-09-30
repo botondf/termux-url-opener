@@ -10,6 +10,7 @@ elif [ ! -d termux-url-opener ]; then
 fi
 
 cd $HOME
+chmod u+x $HOME/termux-url-opener/termux-url-opener.sh
 mkdir bin
 ln -s $HOME/termux-url-opener/termux-url-opener.sh $HOME/bin/termux-url-opener.sh
 ln -s $HOME/termux-url-opener/termux-url-opener.sh $HOME/bin/termux-file-editor.sh
