@@ -22,18 +22,18 @@ To install, first ensure you have `git` so the repository can be cloned:
 
 `pkg install git`
 
-Go to the home directory in Termux:
-
-`cd ~` or `cd $HOME`
-
 Clone the repository with default name:
 
 `git clone https://github.com/botondf/termux-url-opener.git`
 
+Change directory to the girtrepo root. By default it is as follows but the directory can be renamed on cloning, just use that.
+
+`cd termux-url-opener`
+
 Make the installer executable for the owner:
 
-`chmod u+x /termux-url-opener/install.sh`
+`chmod u+x install.sh`
 
 Run the installer:
 
-`termux-url-opener/install.sh`
+`./install.sh`
