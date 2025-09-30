@@ -14,7 +14,5 @@ mkdir bin
 ln -s $HOME/termux-url-opener/termux-url-opener.sh $HOME/bin/termux-url-opener.sh
 ln -s $HOME/termux-url-opener/termux-url-opener.sh $HOME/bin/termux-file-editor.sh
 termux-setup-storage
-dir=/storage/emulated/0/Videos
-mkdir -p $dir
 
 echo "Sucessfully installed to $HOME/bin/termux-url-opener.sh. Files are downloaded to $dir.
