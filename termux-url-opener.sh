@@ -1,6 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash              
 
 dir=/storage/emulated/0/Videos
+mkdir -p $dir
 
 # Check for Termux dependencies
 for PACKAGE in ffmpeg yt-dlp 
