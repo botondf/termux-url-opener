@@ -1,0 +1,21 @@
+#!/data/data/com.termux/files/usr/bin/bash              
+
+# An initial install script. Only run the first time.
+
+wd="$HOME/termux-url-opener"
+
+if [ "$(pwd)" != "$wd" ]; then
+    echo "Please run inside $wd."
+    exit 1
+elif [ ! -e install ]; then
+    echo "could not find installer. Please run inside $wd."
+    exit 1
+fi
+
+chmod u+x $HOME/termux-url-opener/termux-url-opener
+mkdir $HOME/bin
+ln -s $HOME/termux-url-opener/termux-url-opener $HOME/bin/termux-url-opener
+#ln -s $HOME/termux-url-opener/termux-url-opener $HOME/bin/termux-file-editor
+termux-setup-storage
+
+echo "Sucessfully installed to $HOME/bin/termux-url-opener."
