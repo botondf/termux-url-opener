@@ -32,8 +32,8 @@ Change directory to the girtrepo root. By default it is as follows but the direc
 
 Make the installer executable for the owner:
 
-`chmod u+x install.sh`
+`chmod u+x install`
 
 Run the installer:
 
-`./install.sh`
+`./install`
